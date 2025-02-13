@@ -4,30 +4,37 @@
 }
 
 
-h2
-{
+@font-face {
+    font-family: "Light_SF";
+    src: url(../fonts/TTFirs/TTFirs-Light.eot);
+}
+
+h2,p,a {
     margin: 0;
 }
+
+
 
 body {
     padding: 0;
     margin: 0;
     font-family: "SFnt";
     font-weight: bold;
+    background: rgb(124, 141, 158);
+    background: linear-gradient(133deg, rgba(124, 141, 158, 1) 0%, rgba(8, 19, 68, 1) 0%, rgba(8, 19, 68, 1) 49%, rgba(0, 3, 13, 1) 100%);
 }
 
 #slide {
     padding-top: 56px;
     margin: 0;
-    background: rgb(124, 141, 158);
-    background: linear-gradient(133deg, rgba(124, 141, 158, 1) 0%, rgba(8, 19, 68, 1) 0%, rgba(8, 19, 68, 1) 49%, rgba(0, 3, 13, 1) 100%);
+    
 }
 
 
 .slide_cont {
     margin: 0 auto;
     width: 1400px;
-    color: white;
+    color: #99c1da;
 }
 
 /* Первый слайд */
@@ -54,8 +61,7 @@ background: linear-gradient(90deg, rgba(124,141,158,1) 0%, rgba(26,138,240,1) 0%
 
 }
 
-.f_sl_h2
-{
+.f_sl_h2 {
     font-size: 47px;
 
 }
@@ -65,10 +71,32 @@ background: linear-gradient(90deg, rgba(124,141,158,1) 0%, rgba(26,138,240,1) 0%
     flex-direction: row;
 }
 
-.f_sl_logo img
-{
+.f_sl_logo img {
     padding-top: 40px;
     object-fit: contain;
     transform: scale(130%);
 }
 
+.f_sl_stripe {
+    margin-top: 58px;
+    width: 543px;
+    height: 1.44px;
+    background: rgb(124, 141, 158);
+    background: linear-gradient(90deg, rgba(124, 141, 158, 1) 0%, rgba(82, 179, 221, 1) 0%, rgba(35, 145, 191, 1) 72%, rgba(0, 0, 0, 0.6559873949579832) 98%);
+}
+
+#f_sl_understr
+{
+    margin-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: lighter;
+}
+
+
+/* Второй слайд */
+
+.second_title
+{
+    font-size: 57px;
+}
