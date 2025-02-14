@@ -9,7 +9,9 @@
     src: url(../fonts/TTFirs/TTFirs-Light.eot);
 }
 
-h2,p,a {
+h2,
+p,
+a {
     margin: 0;
 }
 
@@ -27,14 +29,14 @@ body {
 #slide {
     padding-top: 56px;
     margin: 0;
-    
+
 }
 
 
 .slide_cont {
     margin: 0 auto;
     width: 1400px;
-    color: #99c1da;
+    color: white;
 }
 
 /* Первый слайд */
@@ -71,10 +73,16 @@ background: linear-gradient(90deg, rgba(124,141,158,1) 0%, rgba(26,138,240,1) 0%
     flex-direction: row;
 }
 
+
+
 .f_sl_logo img {
     padding-top: 40px;
     object-fit: contain;
     transform: scale(130%);
+    width: 100%;
+    background: none;
+    filter: drop-shadow(0 0 8rem #1d94b5);
+
 }
 
 .f_sl_stripe {
@@ -85,8 +93,7 @@ background: linear-gradient(90deg, rgba(124,141,158,1) 0%, rgba(26,138,240,1) 0%
     background: linear-gradient(90deg, rgba(124, 141, 158, 1) 0%, rgba(82, 179, 221, 1) 0%, rgba(35, 145, 191, 1) 72%, rgba(0, 0, 0, 0.6559873949579832) 98%);
 }
 
-#f_sl_understr
-{
+#f_sl_understr {
     margin-top: 10px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 30px;
@@ -96,7 +103,6 @@ background: linear-gradient(90deg, rgba(124,141,158,1) 0%, rgba(26,138,240,1) 0%
 
 /* Второй слайд */
 
-.second_title
-{
+.second_title {
     font-size: 57px;
 }
