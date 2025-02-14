@@ -1,3 +1,11 @@
+:root
+{
+    --title_grad: linear-gradient(90deg, rgba(124, 141, 158, 1) 0%, rgba(26, 138, 240, 1) 0%, rgba(26, 143, 237, 1) 19%, rgba(28, 155, 231, 1) 39%, rgba(31, 174, 218, 1) 63%, rgba(31, 179, 214, 1) 72%, rgba(31, 185, 210, 0.5) 88%, rgba(32, 187, 208, 0.3) 100%);
+    --block_grad: linear-gradient(90deg, rgba(124,141,158,1) 0%, rgba(20,107,183,1) 0%, rgba(0,91,117,0.5) 51%, rgba(0,27,51,0.3) 100%);
+    --border-grad: linear-gradient(90deg, rgba(124,141,158,1) 0%, rgba(20,107,183,1) 0%, rgba(0,91,117,0.5) 51%, rgba(0,27,51,0.1) 100%);
+}
+
+
 @font-face {
     font-family: "SFnt";
     src: url(../fonts/TTFirs/TTFirs-ExtraBold.ttf);
@@ -9,9 +17,7 @@
     src: url(../fonts/TTFirs/TTFirs-Light.eot);
 }
 
-h2,
-p,
-a {
+h2,p,a {
     margin: 0;
 }
 
@@ -56,7 +62,7 @@ body {
 background: linear-gradient(90deg, rgba(124,141,158,1) 0%, rgba(26,138,240,1) 0%, rgba(26,143,237,1) 19%, rgba(28,155,231,1) 39%, rgba(31,174,218,1) 63%, rgba(31,179,214,1) 72%, rgba(31,185,210,1) 88%, rgba(32,187,208,1) 100%); */
 .f_sl_h1 {
     font-size: 90px;
-    background: linear-gradient(90deg, rgba(124, 141, 158, 1) 0%, rgba(26, 138, 240, 1) 0%, rgba(26, 143, 237, 1) 19%, rgba(28, 155, 231, 1) 39%, rgba(31, 174, 218, 1) 63%, rgba(31, 179, 214, 1) 72%, rgba(31, 185, 210, 1) 88%, rgba(32, 187, 208, 1) 100%);
+    background: var(--title_grad) ;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-bottom: 0px;
@@ -64,7 +70,7 @@ background: linear-gradient(90deg, rgba(124,141,158,1) 0%, rgba(26,138,240,1) 0%
 }
 
 .f_sl_h2 {
-    font-size: 47px;
+    font-size: 37px;
 
 }
 
@@ -86,23 +92,455 @@ background: linear-gradient(90deg, rgba(124,141,158,1) 0%, rgba(26,138,240,1) 0%
 }
 
 .f_sl_stripe {
-    margin-top: 58px;
+    margin-top: 88px;
     width: 543px;
-    height: 1.44px;
+    height: 3px;
     background: rgb(124, 141, 158);
-    background: linear-gradient(90deg, rgba(124, 141, 158, 1) 0%, rgba(82, 179, 221, 1) 0%, rgba(35, 145, 191, 1) 72%, rgba(0, 0, 0, 0.6559873949579832) 98%);
+    background: linear-gradient(90deg, rgba(124, 141, 158, 1) 0%, rgba(82, 179, 221, 1) 0%, rgba(35, 145, 191, 1) 72%, rgba(0, 0, 0, 0.1) 98%);
 }
 
 #f_sl_understr {
     margin-top: 10px;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 30px;
+    font-size: 27px;
     font-weight: lighter;
 }
 
 
 /* Второй слайд */
 
+
 .second_title {
-    font-size: 57px;
+    font-size: 52px;
+}
+
+.colored_title
+{
+    background: var(--title_grad);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 40px;
+}
+
+
+.second_sl_blocks
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.block_title
+{
+    font-size: 30px;
+}
+
+.left_block
+{
+    width: 716px;
+    height:539px;
+    border: 3px solid #1d94b5;
+    border-right: 0;
+    border-top: 0;
+    border-bottom: 0;
+    background: rgb(124,141,158);
+    background: var(--block_grad);
+    border-radius: 20px;
+    position: relative;
+    padding: 30px 50px 0px 50px;
+}
+
+.right_block
+{
+    width: 516px;
+    height:439px;
+    border: 3px solid #1d94b5;
+    border-right: 0;
+    border-top: 0;
+    border-bottom: 0;
+    background: rgb(124,141,158);
+    background: var(--block_grad);
+    border-radius: 20px;
+    position: absolute;
+    left: 750px;
+    top: 950px;
+    padding: 30px 50px 0px 50px;
+}
+
+#block_stri
+{
+    margin-top: 40px;
+}
+
+.left_block_options
+{
+    margin-top: 50px
+}
+
+.right_block_options
+{
+    display: flex;
+    flex-direction: row;
+    align-items: top;
+}
+
+
+.opt 
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.num
+{
+    width: 81px;
+    color: #9dcfed;
+    font-size: 60px;
+}
+
+.opt_text
+{
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    margin-left: 20px;
+    width: 350px;
+}
+
+.right_bl_str
+{
+    width: 5px;
+    height: 190px;
+    background: linear-gradient(180deg, rgba(124, 141, 158, 1) 0%, rgba(82, 179, 221, 1) 0%, rgba(35, 145, 191, 1) 72%, rgb(17, 69, 91,0.1) 98%);
+}
+
+
+#right_opt_text
+{
+    margin-top: 30px;
+}
+
+.right_block_img
+{
+    width: 100%;
+    margin-top: 40px;
+}
+
+
+/* Третий слайд */
+
+
+.third_slide
+{
+    font-size: 52px;
+}
+
+.third_back
+{
+    position:absolute;
+    z-index: -1;
+    transform: scale(30%);
+    top: 1100px;
+    left: 420px;
+    opacity: 0.3;
+    
+}
+
+
+.third_title
+{
+    font-size: 52px;
+}
+
+
+.third_blocks
+{
+    margin-top: 50px;
+}
+
+
+
+
+#th_blocks_container, #th_block_cont
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.th_logo
+{
+    object-fit: contain;
+}
+.th_block_title
+{
+    margin-left: 20px;
+    font-size: 25px;
+}
+
+.third_annot
+{
+    margin-top: 60px;
+}
+
+#full_blk
+{
+    border: 3px solid #1d94b5;
+    width: 100%;
+    padding: 70px 150px 200px 150px;
+}
+
+.arm
+{
+    position:absolute;
+    -webkit-transform : rotate(-45deg) scale(70%);
+    left: 900px;
+    top: 1850px;
+}
+
+/* Четвёртый слайд */
+
+
+.fth_blk
+{
+    border-top: #1d94b5 solid 4px;
+    border-bottom: #1d94b5 solid 4px;
+    border-left: #1d94b5 solid 4px;
+    background: none;
+    height: 600px;
+}
+
+.fth_title
+
+{
+    font-size: 52px;
+}
+
+
+.sec_opt_text
+{
+    margin-left: 0px;
+    font-size: 20px;
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 20px;
+    width: 500px;
+
+}
+
+
+
+.right_block.fth_blk
+{
+    width: 700px;
+    position: absolute;
+    top: 2650px;
+    left: 750px;
+    border-top: 0;
+    border-bottom: 0;
+    background: var(--block_grad);
+}
+
+
+.arrow
+{
+    font-size: 40px;
+    font-weight: bolder;
+    color: #9dcfed;
+    margin-right: 20px;
+}
+
+.blk_list_text
+{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+}
+
+.blk_row
+{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+}
+
+
+/* Пятый слайд */
+
+#info_block
+{
+    position: relative;
+    width: 100%;
+    border: 3px solid #1d94b5;
+    border-radius: 15px;
+    background: rgb(124,141,158);
+    background: var(--block_grad);
+    padding: 30px 50px 0px 50px;
+    margin-bottom: 100px;
+    margin-top: 50px;
+}
+
+
+
+.opt_logo
+{
+    transform: scale(10%);
+    width: 0px;
+    height: 70px;
+    margin-bottom: 40px;
+}
+
+
+#fifth_block_text
+{
+    width: 400px;
+    margin-bottom: 50px;
+}
+
+.fifth_block_cont 
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.fifth_block_cont .block_opti
+{
+    margin-right: 150px;
+}
+
+.fifth_block_img
+{
+    position: absolute;
+    transform: scale(0.7);
+    top: -350px;
+    left: 500px;
+}
+
+
+/* Шестой слайд */
+
+.six_slide
+{
+    position: relative;
+}
+
+.sixth_back
+{
+    position: absolute;
+    top: 350px;
+    left: -50px;
+    z-index: -1;
+    opacity: 0.3;
+}
+
+
+.sixth_title
+{
+    font-size: 50px;
+    text-align: center;
+}
+
+
+.sixth_blocks_connt
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.sixth_blocks_connt #full_blk
+{
+    padding-top: 20px;
+    margin-top: 50px;
+    width: 400px;
+    overflow: hidden;
+    margin-bottom: 150px;
+}
+
+
+
+.sixth_blocks_connt .th_block_title
+{
+    font-size: 18px;
+    width:400px;
+    margin-bottom: 50px;
+}
+
+.sixth_arrow
+{
+    color: #1d94b5;
+    font-size: 40px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.sixth_block_image img
+{
+    opacity: 0.6;
+    width: 250px;
+    height: 150px;
+    object-fit: contain;
+}
+
+.seven_title
+{
+    font-size: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.seven_title .f_sl_stripe
+{
+    margin-top: 0px;
+    margin-left: 50px;
+}
+
+.seven_blocks_grid
+{
+    display: grid;
+    grid-template-columns: repeat(3,450px);
+}
+
+.block_num
+{
+    width: 50px;
+    height: 50px;
+    color: #29b1d7;
+    border: 1px solid #29b1d7;
+    text-align: center;
+    border-radius: 10px;
+    background: var(--block_grad);
+    margin-right: 20px;
+    
+}
+
+.seven_block
+{
+    font-size: 30px;
+    margin-bottom: 70px;
+    margin-right: 100px;
+}
+
+.seven_block_title
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.seven_block .blk_list_text
+{
+    font-size: 15px;
+}
+
+.seven_block .arrow
+{
+    font-size: 15px;
+    margin-right: 5px;
+}
+
+
+.eight_title 
+{
+    text-align: center;
+    font-size: 50px;
 }
