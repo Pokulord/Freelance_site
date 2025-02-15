@@ -21,7 +21,11 @@ h2,p,a {
     margin: 0;
 }
 
-
+a
+{
+    text-decoration: none;
+    color: #9dcfed;
+}
 
 body {
     padding: 0;
@@ -353,6 +357,8 @@ background: linear-gradient(90deg, rgba(124,141,158,1) 0%, rgba(26,138,240,1) 0%
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: lighter;
+    display: flex;
+    align-items: center;
 }
 
 .blk_row
@@ -543,4 +549,134 @@ background: linear-gradient(90deg, rgba(124,141,158,1) 0%, rgba(26,138,240,1) 0%
 {
     text-align: center;
     font-size: 50px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.eight_block
+{
+    width: 600px;
+    position: absolute;
+    top: -10px;
+    left: 700px;
+    height: 600px;
+}
+
+.tw_second_title {
+    text-align: center;
+    font-size: 25px;
+}
+
+.tw_blocks_cont {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+}
+
+.tw_blocks_cont .block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background: var(--block_grad);
+    border: #29b1d7 solid 2px;
+    border-radius: 10px;
+    width: 350px;
+    height: 250px;
+}
+
+
+.tw_blocks_cont .th_block_title
+{
+    text-align: center;
+    width: 100%;
+}
+
+#mid_blo
+{
+    width: 450px;
+}
+
+#mid_blo .tw_block_text
+{
+    width: 350px;
+}
+
+.tw_block_text {
+    margin-top: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+    width: 300px;
+}
+
+.blocknum {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #1d94b5;
+}
+
+#dotted_bl
+{
+    border: #1d94b5 dashed 3px;
+    position: relative;
+}
+
+
+.optional_mark
+{
+    position: absolute;
+    padding-left: 5px;
+    padding-right: 5px;
+    top: 0px;
+    right: 0px; 
+    color: #9dcfed;
+    border: #29b1d7 solid 1px;
+    border-top: none;
+    border-right: none;
+    border-radius: 10px;
+}
+
+#slidee
+{
+    margin-top: 70px;
+}
+
+.team_blocks_cont .sixth_blocks_connt .left_block
+{
+    width: 300px;
+    padding-bottom: 50px;
+}
+
+.team_image img
+{
+    object-fit: cover;
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+
+.team_status
+{
+    font-weight: lighter;
+}
+
+.mail_logo
+{
+    object-fit: contain;
+    width: 30px;
+    height: 30px;
+}
+
+.teamname
+{
+    font-size: 20px;
+}
+
+
+.team_mail
+{
+    margin-bottom: 30px;
 }
